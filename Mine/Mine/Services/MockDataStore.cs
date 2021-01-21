@@ -14,12 +14,11 @@ namespace Mine.Services
         {
             items = new List<ItemModel>()
             {
-                new ItemModel { Id = Guid.NewGuid().ToString(), Text = "First item", Description="This is an item description." },
-                new ItemModel { Id = Guid.NewGuid().ToString(), Text = "Second item", Description="This is an item description." },
-                new ItemModel { Id = Guid.NewGuid().ToString(), Text = "Third item", Description="This is an item description." },
-                new ItemModel { Id = Guid.NewGuid().ToString(), Text = "Fourth item", Description="This is an item description." },
-                new ItemModel { Id = Guid.NewGuid().ToString(), Text = "Fifth item", Description="This is an item description." },
-                new ItemModel { Id = Guid.NewGuid().ToString(), Text = "Sixth item", Description="This is an item description." }
+                new ItemModel { Id = Guid.NewGuid().ToString(), Text = "Cap's shield", Description="Protect against villains", Value = 1 },
+                new ItemModel { Id = Guid.NewGuid().ToString(), Text = "Mjolnir Hammer", Description="Summons lighting and electrocute enemies" ,Value = 5},
+                new ItemModel { Id = Guid.NewGuid().ToString(), Text = "Hawkeye Bow and Arrow", Description="Shoot enemies with high accuracy" ,Value = 2},
+                new ItemModel { Id = Guid.NewGuid().ToString(), Text = "Iron Man's suit", Description="Fly and shoot enemies" , Value = 7},
+                new ItemModel { Id = Guid.NewGuid().ToString(), Text = "Infinity Gauntlet", Description="Eliminate half of humanity with a single snap", Value = 10 },   
             };
         }
 
