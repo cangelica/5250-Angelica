@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using Mine.ViewModels;
 
 using Mine.Models;
 
@@ -15,17 +16,16 @@ namespace Mine.Views
     {
         public ItemModel Item { get; set; }
 
-        public ItemUpdatePage()
+        /// <summary>
+        /// Constructor that takes a ViewModel
+        /// </summary>
+        /// <param name="viewModel"></param>
+        public ItemUpdatePage(ItemReadViewModel viewModel)
         {
             InitializeComponent();
+            Item = viewModel.Item;
 
-            Item = new ItemModel
-            {
-                Text = "Item name",
-                Description = "This is an item description."
-            };
-
-            BindingContext = this;
+            BindingContext = this; 
         }
 
         async void Save_Clicked(object sender, EventArgs e)
